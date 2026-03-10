@@ -1,0 +1,107 @@
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b 70%);
+  color: #e6e6e6;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(30, 30, 30, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+}
+
+/* NAV LINKS */
+
+.navbar-brand {
+  color: #e6e6e6 !important;
+  position: relative;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #4b8df8;
+  transition: 0.3s;
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+}
+
+.navbar-brand:hover {
+  color: #4b8df8 !important;
+}
+
+/* GLASS CARD */
+
+.card {
+  background: rgba(25, 25, 25, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  font-family: "Segoe UI", sans-serif;
+  margin: 15px;
+  color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Fix text visibility inside glass cards */
+
+.card h3 {
+  color: #ffffff;
+}
+
+.card p {
+  color: #d6d6d6;
+}
+
+/* BUTTON */
+
+.btn-primary {
+  background: #4b8df8;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #3c72d9;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+/* JAVASCRIPT */
+
+.badge {
+  font-size: 0.75rem;
+  margin-right: 6px;
+}
+
+.language-badge{
+font-size:0.75rem;
+margin-right:6px;
+padding:5px 8px;
+border-radius:6px;
+}
